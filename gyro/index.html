@@ -12,11 +12,11 @@ body {
 }
 
 .main {
-	background-image:url('img/backgrounds/city_background_night3.jpg');
-	background-repeat:repeat-y;
-	background-position:0% 0%;
-	width:800px;
-	height:3000px;
+	background-image:url('img/backgrounds/city_background_night2.jpg');
+	background-repeat:repeat-x;
+	background-position:0% 80%;
+	width:1080px;
+	height:600px;
 	position:absolute;
 	/*-webkit-perspective:300;
 	perspective:300;*/
@@ -26,8 +26,8 @@ body {
 	background-image:url('img/overlays/icon_proceed.png');
 	background-repeat: no-repeat;
 	position: absolute;
-	left:0px;
-	top:600px;
+	left:20px;
+	top:20px;
 	width:39px;
 	height:39px;
 	display:block;
@@ -128,8 +128,8 @@ function deviceOrientationHandler(tiltLR,tiltFB,dir,motionUD){
 	document.getElementById("doDirection").innerHTML=Math.round(dir);
 	document.getElementById("doMotionUD").innerHTML=motionUD;
 	//document.getElementById("bkgrnd").style.backgroundPosition=tiltFB + "%" + " " + tiltLR + "%";
-	document.getElementById("character").style.left=(tiltLR*3) + "px";
-	document.getElementById("character").style.top=(tiltFB*20) + "px";
+	document.getElementById("character").style.top=(tiltLR*2.8) + "px";
+	document.getElementById("character").style.left=(tiltFB*40) + "px";
 	}
     </script>
 
