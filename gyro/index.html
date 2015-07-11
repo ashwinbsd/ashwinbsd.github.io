@@ -12,25 +12,24 @@ body {
 }
 
 .main {
-	background-image:url('img/backgrounds/reception-sized.jpg');
-	background-repeat:repeat;
-	background-position:51% 27%;
-	width:1026px;
-	height:768px;
+	background-image:url('img/backgrounds/city_background_night2.jpg');
+	background-repeat:repeat-x;
+	background-position:0% -130%;
+	width:1280px;
+	height:1080px;
 	position:absolute;
 	/*-webkit-perspective:300;
 	perspective:300;*/
 	}
 
 .character {
-	background-image:url('img/overlays/sonic2.png');
-	background-repeat: repeat-x;
-	background-position:60% 50%;
+	background-image:url('img/overlays/icon_proceed.png');
+	background-repeat: no-repeat;
 	position: absolute;
-	left:10%;
-	top:30%;
-	width:50px;
-	height:200px;
+	left:0px;
+	top:0px;
+	width:39px;
+	height:39px;
 	display:block;
 }
 
@@ -77,7 +76,7 @@ Please click <a href="http://www.html5rocks.com/en/tutorials/device/orientation/
 <div class="main" id="bkgrnd">
 </div>
 
-<div class="character" id="ch_sonic">
+<div class="character" id="character">
 </div>
 
 <script type="text/javascript">
@@ -128,8 +127,9 @@ function deviceOrientationHandler(tiltLR,tiltFB,dir,motionUD){
 	document.getElementById("doTiltFB").innerHTML=Math.round(tiltFB);
 	document.getElementById("doDirection").innerHTML=Math.round(dir);
 	document.getElementById("doMotionUD").innerHTML=motionUD;
-	document.getElementById("bkgrnd").style.backgroundPosition=tiltFB + "%" + " " + tiltLR + "%";
-	document.getElementById("ch_sonic").style.backgroundPosition=tiltFB + "%" + " " + tiltLR + "%";
+	//document.getElementById("bkgrnd").style.backgroundPosition=tiltFB + "%" + " " + tiltLR + "%";
+	document.getElementById("character").style.left=(tiltLR*3) + "px";
+	document.getElementById("character").style.top=(tiltFB*10) + "px";
 	}
     </script>
 
