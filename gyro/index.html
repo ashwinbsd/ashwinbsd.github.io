@@ -97,10 +97,10 @@ function init3(){
 		document.getElementById("doEvent").innerHTML="DeviceOrientation";
 		window.addEventListener('deviceorientation',function(eventData){
 			var bgPosX=50;
-			var bgPosY=200;
+			var bgPosY=180;
 			var LRtransform = 4.3;
-			var tiltLR=(eventData.gamma * LRtransform) + bgPosY;
-			var tiltFB=bgPosX - eventData.beta;
+			var tiltLR=bgPosX - eventData.beta;
+			var tiltFB=(eventData.gamma * LRtransform) + bgPosY;
 			var dir=eventData.alpha;
 			var motUD=null;
 			
