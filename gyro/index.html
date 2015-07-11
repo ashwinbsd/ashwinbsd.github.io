@@ -100,7 +100,7 @@ function init3(){
 			var bgPosY=200;
 			var LRtransform = 4.3;
 			var tiltLR=(eventData.gamma * LRtransform) + bgPosY;
-			var tiltFB=-bgPosX + eventData.beta;
+			var tiltFB=(-1 * bgPosX) + eventData.beta;
 			var dir=eventData.alpha;
 			var motUD=null;
 			
