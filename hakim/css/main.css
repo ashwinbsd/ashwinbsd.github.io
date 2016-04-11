@@ -280,6 +280,7 @@ a:hover {
   color: #9fb5c2;
   border-color: #9fb5c2;
 }
+
 a:active, a:focus {
   color: #9fb5c2;
   border-color: #9fb5c2;
@@ -400,14 +401,6 @@ header a {
   color: #e85151;
   text-decoration: none;
   border: none;
-}
-header a:hover {
-  color: #d11c1c;
-  border-color: #d11c1c;
-}
-header a:active, header a:focus {
-  color: #d11c1c;
-  border-color: #d11c1c;
 }
 header nav {
   text-align: right;
