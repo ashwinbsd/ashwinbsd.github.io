@@ -280,9 +280,9 @@ img { max-width: 100%; }
 .menu-button span {
   display: block;
   position: absolute;
-  height: 1px;
+  height: 2px;
   width: 100%;
-  background: #E8E9F3;
+  background: #424242;
   border-radius: 9px;
   opacity: 1;
   left: 0;
@@ -353,7 +353,7 @@ img { max-width: 100%; }
 }
 .menu-list a {
   display: block;
-  padding: 1.5em 0;
+  padding: 1.25em 0;
   -webkit-transform: translate3d(0, 500px, 0);
   transform: translate3d(0, 500px, 0);
   color: #a5a5a5;
@@ -401,6 +401,16 @@ img { max-width: 100%; }
   margin-bottom: 20px;
   padding: 10px;
 }
+    .menu-list a span.item {
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        margin-left: 20px;
+        font-size: 14px;
+        color: #aaa;
+    }
+      .menu-list a span.item:hover {
+          color: #fff;
+      }
 .menu-list a.active span{
   color: #ffffff !important;
 }
@@ -467,16 +477,22 @@ h4.case-header {
 }
 
 #innowear .case-header {
-  color: #84834f;
+  color: #564254;
 }
+  #innowear h1 {
+      color: #177281;
+  }
 
 #uto .case-header {
   color: #84834f;
 }
 
 #cryptochat .case-header {
-  color: #84834f;
+  color: #564254;
 }
+  #cryptochat h1 {
+      color: #177281;
+  }
 
 #grassroots .case-header {
   color: #84834f;
@@ -570,8 +586,10 @@ p {
 
 /*----------------------------------------- 6) Hero --------------------------------------------------*/
 #home {
-  background: url('../images/asanoha-purp-400px.png');
-  background-repeat: repeat;
+  /*background: url('../images/asanoha-purp-400px.png');*/
+  background: url('../images/img_head-2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   min-width: 100%;
   min-height: 100%;
   height: 100%;
@@ -591,6 +609,30 @@ p {
   display: block;
 }
 
+#cryptochat {
+  background: #f0f0ee url('../images/portfolio_casebg-cryptochat.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#innowear {
+  background: #f0f0ee url('../images/portfolio_casebg-innowear.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
 .wrap-hero-content{
   width: 100%;
   height: 100%;
@@ -600,7 +642,7 @@ p {
 }
 .hero-content{
   font-weight: 100;
-  color: #fafafa;
+  color: #424242;
   position: absolute;
   text-align: center;
   min-width: 300px;
@@ -608,6 +650,7 @@ p {
   top: 40%;
   padding: 32px 65px;
   background: transparent;
+  text-shadow: 1px 1px 2px #fff;
   /*outline: 4px double #FFFFFF;
   outline-offset: 8px;*/
   -webkit-transform: translateX(-50%) translateY(-50%);
@@ -615,6 +658,22 @@ p {
 }
 
 #spicebox .hero-content {
+  text-align: left;
+  left: 15%;
+  top: 30%;
+  padding: 50px 10px;
+  color: #b56539;
+}
+
+#cryptochat .hero-content {
+  text-align: left;
+  left: 15%;
+  top: 30%;
+  padding: 50px 10px;
+  color: #b56539;
+}
+
+#innowear .hero-content {
   text-align: left;
   left: 15%;
   top: 30%;
@@ -703,12 +762,11 @@ ul.portfolio-image li:hover {
   cursor: pointer;
 }
 ul.portfolio-image li:hover img {
-  -webkit-filter: grayscale(20%);
-  transform: scale(1.15);
+
 }
 ul.portfolio-image li:hover .image-bg {opacity: 1;}
 ul.portfolio-image li:hover .description-wrap {
-  background: rgba(186, 186, 186, 0.6);
+  background: rgba(186, 186, 186, 0.05);
 }
 ul.portfolio-image li img {
   position: absolute;
@@ -716,7 +774,6 @@ ul.portfolio-image li img {
   height: 100%;
   left: 0;
   top: 0;
-  -webkit-filter: grayscale(100%);
   transition: filter, transform, 0.5s;
 }
 ul.portfolio-image li .decription-wrap {
@@ -725,7 +782,6 @@ ul.portfolio-image li .decription-wrap {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(242, 242, 242, 0.4);
   padding: 20px;
   transition: background, 0.5s;
 }
@@ -1290,13 +1346,13 @@ ul.portfolio-image li .desc.before-after {
   background: #ABABAB;
 }
 .twitter a:after{
-  background-color: #458eff;
+  background-color: #ffc838;
 }
 .gplus{
-  background: #d8d8d8;
+  background: #474747;
 }
 .gplus a:after{
-  background: #dd4b39;
+  background: #674172;
 }
 
 .footer-bottom{
